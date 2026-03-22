@@ -1,0 +1,145 @@
+{
+  "source": "fallback",
+  "cities": [
+    {
+      "city": "Goa",
+      "coords": { "lat": 15.2993, "lon": 74.124 },
+      "weather": {
+        "temperatureC": 30.2,
+        "humidityPct": 76,
+        "windSpeedMs": 4.1,
+        "pressureHpa": 1008,
+        "visibilityKm": 7.5,
+        "rainProbabilityPct": 65,
+        "uvIndex": 7.2
+      },
+      "air": {
+        "aqi": 3,
+        "pm2_5": 45,
+        "pm10": 62,
+        "co": 480,
+        "no2": 22,
+        "so2": 7,
+        "o3": 58
+      },
+      "forecast": {
+        "tempChange3h": 1.2,
+        "tempChange6h": 2.1,
+        "rainTrend": "increasing",
+        "confidence": "Medium"
+      }
+    },
+    {
+      "city": "Mumbai",
+      "coords": { "lat": 19.076, "lon": 72.8777 },
+      "weather": {
+        "temperatureC": 33.8,
+        "humidityPct": 69,
+        "windSpeedMs": 5.3,
+        "pressureHpa": 1006,
+        "visibilityKm": 5.3,
+        "rainProbabilityPct": 48,
+        "uvIndex": 8.1
+      },
+      "air": {
+        "aqi": 4,
+        "pm2_5": 89,
+        "pm10": 132,
+        "co": 710,
+        "no2": 54,
+        "so2": 10,
+        "o3": 70
+      },
+      "forecast": {
+        "tempChange3h": 0.5,
+        "tempChange6h": 1.3,
+        "rainTrend": "steady",
+        "confidence": "High"
+      }
+    },
+    {
+      "city": "Jaipur",
+      "coords": { "lat": 26.9124, "lon": 75.7873 },
+      "weather": {
+        "temperatureC": 36.4,
+        "humidityPct": 35,
+        "windSpeedMs": 3.2,
+        "pressureHpa": 1002,
+        "visibilityKm": 8.9,
+        "rainProbabilityPct": 18,
+        "uvIndex": 9.2
+      },
+      "air": {
+        "aqi": 2,
+        "pm2_5": 28,
+        "pm10": 44,
+        "co": 320,
+        "no2": 14,
+        "so2": 4,
+        "o3": 52
+      },
+      "forecast": {
+        "tempChange3h": 0.8,
+        "tempChange6h": -1.1,
+        "rainTrend": "decreasing",
+        "confidence": "Medium"
+      }
+    },
+    {
+      "city": "Ahmedabad",
+      "coords": { "lat": 23.0225, "lon": 72.5714 },
+      "weather": {
+        "temperatureC": 35.5,
+        "humidityPct": 41,
+        "windSpeedMs": 4.8,
+        "pressureHpa": 1004,
+        "visibilityKm": 7.4,
+        "rainProbabilityPct": 21,
+        "uvIndex": 8.7
+      },
+      "air": {
+        "aqi": 3,
+        "pm2_5": 56,
+        "pm10": 81,
+        "co": 520,
+        "no2": 31,
+        "so2": 6,
+        "o3": 60
+      },
+      "forecast": {
+        "tempChange3h": 1.1,
+        "tempChange6h": 0.2,
+        "rainTrend": "steady",
+        "confidence": "Medium"
+      }
+    },
+    {
+      "city": "Thiruvananthapuram",
+      "coords": { "lat": 8.5241, "lon": 76.9366 },
+      "weather": {
+        "temperatureC": 29.4,
+        "humidityPct": 83,
+        "windSpeedMs": 3.9,
+        "pressureHpa": 1009,
+        "visibilityKm": 6.1,
+        "rainProbabilityPct": 74,
+        "uvIndex": 6.8
+      },
+      "air": {
+        "aqi": 2,
+        "pm2_5": 24,
+        "pm10": 36,
+        "co": 290,
+        "no2": 12,
+        "so2": 3,
+        "o3": 49
+      },
+      "forecast": {
+        "tempChange3h": -0.4,
+        "tempChange6h": -0.8,
+        "rainTrend": "increasing",
+        "confidence": "High"
+      }
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Environmental Intelligence Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar glass">
+        <div>
+          <h1>Environmental Intelligence</h1>
+          <p>Smart decision support for climate, air, travel, and health</p>
+        </div>
+        <div class="topbar-controls">
+          <label for="apiKeyInput" class="field-label">OpenWeather API key</label>
+          <input id="apiKeyInput" type="password" placeholder="Enter API key" />
+          <button id="saveApiKeyBtn" class="btn">Save</button>
+          <span id="dataSourceBadge" class="badge live">Live Data</span>
+        </div>
+      </header>
+
+      <main class="layout">
+        <section class="panel left-panel">
+          <div class="glass panel-card">
+            <h2>Mode</h2>
+            <div class="mode-toggle">
+              <button class="mode-btn active" data-mode="general">General Mode</button>
+              <button class="mode-btn" data-mode="travel">Travel Mode</button>
+              <button class="mode-btn" data-mode="health">Health Mode</button>
+            </div>
+          </div>
+
+          <div class="glass panel-card">
+            <h2>Cities</h2>
+            <div id="cityList" class="city-list"></div>
+          </div>
+
+          <div class="glass panel-card">
+            <h2>KPIs</h2>
+            <div id="kpiGrid" class="kpi-grid"></div>
+          </div>
+        </section>
+
+        <section class="panel center-panel">
+          <div class="glass panel-card">
+            <h2>Forecast Insight</h2>
+            <div id="forecastCard" class="forecast-card"></div>
+          </div>
+
+          <div class="charts-grid">
+            <div class="glass panel-card">
+              <h2>Temperature Comparison</h2>
+              <canvas id="tempChart"></canvas>
+            </div>
+            <div class="glass panel-card">
+              <h2>AQI Gauge</h2>
+              <canvas id="aqiGauge"></canvas>
+            </div>
+            <div class="glass panel-card chart-span">
+              <h2>Pollutant Radar</h2>
+              <canvas id="pollutantRadar"></canvas>
+            </div>
+          </div>
+
+          <div class="glass panel-card">
+            <h2>Auto Insights</h2>
+            <ul id="insightsList" class="insights-list"></ul>
+          </div>
+        </section>
+
+        <aside class="panel right-panel">
+          <div class="glass panel-card">
+            <h2>Theme Extractor</h2>
+            <p class="muted">Upload an image to extract a palette automatically.</p>
+            <input type="file" id="paletteImageInput" accept="image/*" />
+            <div id="palettePreview" class="palette-preview"></div>
+            <div class="theme-actions">
+              <button id="resetThemeBtn" class="btn" type="button">Reset Theme</button>
+              <label class="toggle-row">
+                <input id="defaultThemeToggle" type="checkbox" />
+                <span>Use Default Theme</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="glass panel-card">
+            <h2>Alerts</h2>
+            <div id="alertsPanel" class="alerts-panel"></div>
+          </div>
+
+          <div class="glass panel-card chat-panel">
+            <h2>Assistant</h2>
+            <div id="chatHistory" class="chat-history"></div>
+            <div id="chatSuggestions" class="chat-suggestions"></div>
+            <div class="chat-input-row">
+              <input
+                id="chatInput"
+                type="text"
+                placeholder="Ask: Best city to travel today?"
+              />
+              <button id="sendChatBtn" class="btn">Send</button>
+            </div>
+          </div>
+        </aside>
+      </main>
+    </div>
+
+    <div id="toastContainer" class="toast-container"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

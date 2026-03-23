@@ -1,5 +1,7 @@
 
-# 🚀 Environmental Intelligence Dashboard
+# 🚀 Environmental Intelligence Dashboard 
+
+🚀 Live Demo: https://hinal195.github.io/environmental-intelligence-dashboard/
 
 A full-stack system that transforms real-time weather + air quality data into **actionable decisions** using analytics, risk scoring, and decision intelligence.
 
